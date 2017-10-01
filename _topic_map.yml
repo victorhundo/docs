@@ -16,10 +16,16 @@ Topics:
     Distros: main
 
 ---
-Name: Git no LCC
-Dir: git_lcc
+Name: Exercicíos
+Dir: exercicios
 Distros: main
 Topics:
-  - Name: Utilizando Git nos LCCs
-    File: index
+  - Name: Primeiro Estágio
+    File: primeiro-estagio
+    Distros: main
+  - Name: Segundo Estágio
+    File: segundo-estagio
+    Distros: main
+  - Name: Terceiro Estágio
+    File: terceiro-estagio
     Distros: main

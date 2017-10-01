@@ -1,7 +1,7 @@
 #!/bin/bash
 # Victor Hugo - victorhundo@gmail.com 10/2017
 # Script para montar página do asciibinder da branch master no compativel com github pages
-cd $CIRCLE_WORKING_DIRECTORY
+cd ../
 
 SITE_ROOT=$( echo "$CIRCLE_PROJECT_REPONAME\/")
 
