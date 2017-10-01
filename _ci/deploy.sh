@@ -1,7 +1,7 @@
 #!/bin/bash
 # Victor Hugo - victorhundo@gmail.com 10/2017
 # Script para fazer deploy no gh-pages
-cd ../
+cd $CIRCLE_WORKING_DIRECTORY
 
 mkdir -p /opt/gh-pages && cp -rf ./_build/main/* /opt/gh-pages/
 git add .
