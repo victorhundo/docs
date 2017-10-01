@@ -1,57 +1,58 @@
 [[welcome-index]]
-= {product-title} Documentação {product-version}
+= {product-title}
 {product-author}
 {product-version}
 :data-uri:
 :icons:
 
 [.lead]
-Bem-vindos à documentação do grupo {product-title}, onde você pode achar
-informações e guias sobre os {product-title} e começar explorar as tecnologias que utilizamos.
+Bem-vindos à documentação de estudos de {product-title}, onde você pode achar
+informações e guias sobre os {product-title} e começar seus estudos de forma mais direcionada com apoio de
+conteúdo feito por alunos da disciplina.
 
-Guardians é um grupo composto por alunos voluntários do curso de Ciência da Computação, da Universidade
-Federal de Campina Grande. Os principais objetivos do grupo são: manter o funcionamento dos laboratórios
-de ensino do curso, suporte aos usuários e às máquinas dos laboratórios, atualizações de segurança,
-correção de falhas, desenvolvimento de novas aplicações, aquisição e disseminação de conhecimento
-sobre **Administração de Sistemas**.
+Essa página é feita por alunos que cursam ou cursaram a disciplina de Fundamentos de Física Moderna do curso de
+*Ciência da Computação* pela Universidade Federal de Campina Grande, seu objetivo é *ajudar* outros estudantes que tenham dificuldades
+de aprender esse conteúdo ou para qualquer outro público que esteja interessado nesse assunto.
 
 
 [IMPORTANT]
 ====
-{product-title} {product-version} is community supported only.
+O conteúdo dessa página foi feito por *alunos*, existe chances de ter erros. Por isso, aconselhamos que
+*utilize esse site como apoio* e não como material principal. Caso encontre algum erro, por favor, contribua!
 ====
-
+endif::[]
 
 [TIP]
 ====
-Use o menu da esquerda para navegar na documentação, o campo de busca na parte
-superior à esquerda para procurar algo em específico, ou os links abaixo para
+Use o menu da esquerda para navegar na documentação ou os links abaixo para
 acessar algo em destaque.
 ====
 
-ifdef::openshift-origin[]
 '''
+
 [cols="2",frame="none",grid="none"]
 |===
 
-.^|[big]#Entre em contato#
+.^|[big]#Acesso Rápido#
 a|[none]
-
-* link:https://docs.google.com/forms/d/e/1FAIpQLSfJFJJKBwznlNYLBl-NVgIu-SQFqert2wkzJMs4tlMrAYnJsQ/viewform?formkey=dHBKRV9oeU43bVEzVDMzMWZiY2dJRWc6MQ#gid=0[Helpdesk]
-* link:mailto:guardians-l@googlegroups.com[Email]
-
+* link:/_preview/main/latest/exercicios/terceiro-estagio.html[Exercicios Terceiro Estágio]
 |===
 
 
-'''
 [cols="2",frame="none",grid="none"]
 |===
 
-.^|[big]#Redes Sociais#
+.^|[big]#Material utilizado#
 a|[none]
 
-* link:https://github.com/guardians-dsc/[Encontre todos nossos projetos no GitHub]
-* link:https://www.facebook.com/guardiansufcg[Facebook]
+* link:http://www.df.ufcg.edu.br/~igo.paulino/General_files/FFM_CAP01.pdf[Relatividade]
+* link:http://www.df.ufcg.edu.br/~igo.paulino/General_files/FFM_CAP02.pdf[As Origens da Teoria Quântica]
+* link:http://www.df.ufcg.edu.br/~igo.paulino/General_files/FFM_CAP03.pdf[Introdução à Mecânica Quântica]
+* link:http://www.df.ufcg.edu.br/~igo.paulino/General_files/FFM_CAP04.pdf[Sólidos]
+* link:https://http2.mlstatic.com/fisica-vol-4-otica-e-fisica-moderna-paul-tipler-D_NQ_NP_19538-MLB20173107217_102014-F.jpg[Livro: Tipler]
+* link:http://1.bp.blogspot.com/-gI5iTjw-lHY/VhVl5qfoKdI/AAAAAAAAEuI/7mokiWXrfR0/s1600/fundamentos-de-fisica-vol-4%2Bms-matematica.jpg[Livro: Halliday]
+* link:https://www.youtube.com/user/FisicaModernaUFF[YouTube: Física Moderna UFF]
 
+endif::[]
 
 |===

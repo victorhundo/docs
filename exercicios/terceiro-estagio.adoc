@@ -1,0 +1,151 @@
+[[architecture-infrastructure-components-web-console]]
+= Exercícios Terceiro Estágio
+{product-author}
+{product-version}
+:data-uri:
+:icons:
+:experimental:
+:toc: macro
+
+:toc-title:
+
+toc::[]
+
+== 1) O que é a condição de normalização na mecânica quântica?
+Condição de normalização é a equação dada pela figura abaixo e significa que dado uma função de onda Ψ(x) e a densidade de probabilidade
+|Ψ|², a probabilidade de encontrar a partícula, que tem seu comportamento descrito pela função de onda, em todo o espaço é 100%
+
+.Condição de normalização.
+image::questao01-1.jpg["Equação de Schrödinger na região II (continuação)"]
+
+== 2) Qualquer função de onda que é solução da equação de Schrödinger representa um sistema físico?
+Não, para que represente um sistema físico, além de ser uma solução para a equação de Schrödinger, a função de onda deve ser
+verdadeira quando submetida na condição de normalização.
+
+== 3) Qual é o significado físico da função de onda Ψ na mecânica quântica?
+A função de onda Ψ é apenas um descritor do comportamento ondulatório de uma partícula, a função de onda só terá um significado físico
+quando analisamos o módulo ao quadrado de Ψ, que nos vai mostrar a probabilidade de encontrar a partícula em uma determinada região.
+
+== 4) Em quais situações é possível utilizar a equação de Schrödinger indepedente do tempo?
+Para que possamos utilizar a equação de Schrödinger indepedente do tempo é necessário que a partícula esteja em um estado estacionário,
+ou seja, a partícula deve está em um estado em que a densidade de probabilidade não varie com o tempo.
+
+== 5) O que são estados ligados e não-ligados na mecânica quântica?
+Estados ligados é um estado em que o sistema físico não possui energia suficiente para perder sua configuração. Por exemplo:
+A Terra orbitando em torno do sol, como a energia cinética da Terra é bem menor que a energia para do campo gravitacional do Sol, a Terra
+permanecerá orbitando por um tempo indeterminado. Na mecânica quântica esses estados podem ser vistos em estados estacionários.
+
+== 6) O que são estados quânticos degenerados?
+Estados quânticos degenerados são níveis de energia com mais de uma função de onda associado a ela. A degenerescência está relacionada com
+a simetria espacial do problema. Se o poço de potencial não tiver as três dimensões iguais, as condições de contorno nas paredes do poço
+levariam às condições quânticas distintas e, consequentemente, funções de onda diferentes.
+
+== 7) Suponha uma partícula clássica movendo-se entre duas paredes em x = 0 e x = a.
+=== (a) Qual é a probabilidade de encontrar a partícula entre b e c, com c > b e c < a ?
+Como é dito pela questão que se trata de uma particula clássica, basta aplicarmos a probabilidade direto, não há necessidade de
+encontrar a função de onda nesse caso. Esse problema se trata de uma distribuição uniforme, que tem como função densidade de probabilidade
+a seguinte fórmula:
+
+.Distribuição uniforme
+image::questao07-1.jpg["Distribuição uniforme"]
+
+=== (b) Qual é a probabilidade de encontrar a partícula em x = b que pertence ao intervalo [0,a] ?
+Como se trataa de uma densidade de probabilidade, ou seja, uma variavel aleatória contínua,
+A probabilidade de encontrar em **um ponto** é sempre zero.
+
+= 8) Utilize a analogia com o problema de uma corda presa nas extremidades e encontre as funções de onda para uma partícula presa numa caixa unifimensional de comprimento L.
+O problema de uma corda presa nas extremidades pode ser utilizado como analogia para o problema do poço de potencial infinito, já que fora dos limites (as paredes) não existe
+vibração da onda (corda). Desta maneira, podemos esboçar o gráfico da energia potencial na qual a partícula se encontra da seguinte forma:
+Em que entre zero e L é o espaço entre as paredes
+
+.Gráfico potencial - poço infinito
+image::questao08-1.jpg["Gráfico potencial - poço infinito"]
+
+Para encontrar a função de onda que descreve o problema teremos que encontrar as soluções da equação de Schrödinger para as regiões I, II e III.
+Como sabemos que nas regiões **I e III** o potencial é infinito, então a partícula não tem energia suficiente para se mover nessas regiões, logo,
+não tem comportamento ondulatório para essas regiões e **Ψ(x) = 0**. Na região I, a partícula (corda) pode se mover livremente já que U(x) = 0. Aplicando isso na equação de Schrödinger, temos o seguinte raciocinio:
+
+.Equação de Schrödinger na região II
+image::questao08-2.jpg["Equação de Schrödinger na região II"]
+
+<1> Equação de Schrödinger indepedente do tempo, irá cancelar todo aquele termo já que **U(X) = 0**.
+<2> Atribuimos as contantes para a variável K. Poderiamos ter escolhido qualquer outro nome para essa variável, porém, no decorrer da questão
+esse valor irá coincidir com o **número de onda** de uma função ondulatória. Geralmente o número de onda é atribuido a uma constante chamado K.
+
+Chegamos a uma equação em que temos uma função igualada à **mesma função**, porém, derivada na segunda vez e com o sinal oposto.
+Podemos modelar essa solução por meios de exponeciais ou por meio de *senos* e *cossenos*. Utilizaremos uma solução por meios de senos e cossenos para
+que facilite nossas contas no futuro, porém, depedendo do problema, uma solução utilizando exponenciais seria mais fácil.
+
+Uma solução geral para essa equação é `Ψ(x) = Asenkx + Bcoskx` desta forma, poderemos seguir com o seguinte raciocinio:
+
+.Equação de Schrödinger na região II (continuação)
+image::questao08-3.jpg["Equação de Schrödinger na região II (continuação)"]
+
+<1> A função de onda deve ser a mesma para todas as regiões, logo, Ψ(x) em **x = 0** da região I deve ser o mesmo que o
+Ψ(x) da região II (mesma ideia para **x = L**). Como sabemos que na região I e II Ψ(x) = 0, então nesses pontos `Asenkx + Bcoskx` também deve ser zero.
+<2> Como já sabemos que `B = 0`  "A" não pode ser zero também, senão toda a função seria sempre zero, o que significaria que a partícula não estaria na região.
+Dessa forma, se A não pode ser zero, então quem deve ser zero é `senKL`
+<3> Para que `senKL` seja zero, *KL* deve ser múltiplo de π (180°), a partir disso, encontramos quanto vale K para Ψ(x).
+<4> Sabendo quanto vale K e que B é zero, voltamos para a função geral com os resultados adquiridos.
+
+Basta encontrarmos agora o valor de *A* para que possamos determinar a função de onda Ψ(x) para a região II (e consequentemente
+para toda região, já que para as demais regiões Ψ(x) = 0). Para isso, vamos submeter a equação que já encontramos na *condição de normalização*:
+
+.Condição de normalização aplicada
+image::questao08-4.jpg["Condição de normalização aplicada"]
+
+<1> `sen²x = (1/2)*(1 - cos2x)`
+
+.Condição de normalização aplicada (continuação)
+image::questao08-5.jpg["Condição de normalização aplicada"]
+
+<1> É utilizado `u = 2nπx/L` e `du = 2nπ/Ldx`
+<2> Como sen(2nπ) sempre será multiplo de 180, o seno será zero e seno0 é zero
+
+Substituindo o valor de A encontrado encontramos a função de onda que descreve uma partícula em um poço de potencial infinito que
+também pode ser utilizado como analogia o problema de uma corda  vibrando entre duas paredes.
+
+.Função de onda para uma partícula presa em um poço de potencial infinito.
+image::questao08-6.jpg["Condição de normalização aplicada"]
+
+= 9) Encontre o valor esperado de x e x² para uma partícula presa numa caixa unidimensional no seu primeiro estado excitado.
+
+*TODO*
+
+= 10) Uma partícula presa numa caixa unidimensional de comprimento L está no estado fundamental. Calcule a probabilidade de encontrar a partícula.
+=== a) No intervalo ∆x = 0,001L em x = 1/2L
+*TODO*
+
+=== b) Na região 0 < x < 1/4L
+*TODO*
+
+= 11) Encontre as soluções da equação de onda de Schrödinger para o seguinte potencial
+*TODO*
+
+= 12) Encontre as soluções da equação de onda de Schrödinger para o seguinte potencial
+*TODO*
+
+= 13) Qual é a diferença substancial entre as soluções dos problemas 11 e 12?
+*TODO*
+
+= 14) Mostre que as seguintes funções são soluções da equações  de onda de Schrödinger independente do tempo.
+== a) função 1 descrita pela figura abaixo.
+*TODO*
+
+== b) função 2 descrita pela figura abaixo.
+*TODO*
+
+= 15) Qual é a diferença entre as soluções clássica e quântica de um sistema submetido a um potencial degrau?
+*TODO*
+
+= 16) Explique o efeito tunelamento na mecânica quântica.
+*TODO*
+
+= 17) Quanto vale as energias dos três primeiros estados excitados no problema de uma partícula presa numa caixa tridimensional?
+*TODO*
+
+= 18) Explique o que significa os coeficientes de transmissão e reflexão nos problemas de potencial degrau e barreiras da mecânica quântica.
+*TODO*
+
+= 19) Por que as funções de onda que representam estados quânticos físicos nem sempre são funções reais? Comente sobre o significado das funções de onda complexas.
+*TODO*

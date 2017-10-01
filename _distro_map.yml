@@ -1,10 +1,10 @@
 ---
 main:
-  name: Guardians-DSC
+  name: Física Moderna
   author: Victor Hugo <victorhundo@gmail.com>
-  site: guardians
+  site: fisicamoderna
   site_name: Documentação
-  site_url: https://victorhundo.github.io/docs-guardians/
+  site_url: https://victorhundo.github.io/fisicamoderna/
   branches:
     master:
       name: Latest
