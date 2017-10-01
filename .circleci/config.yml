@@ -52,6 +52,9 @@ jobs:
           command: |
             set -x
             mkdir -p /opt/gh-pages && cp -rf ./_build/main/* /opt/gh-pages/
+            git add .
+            git -c user.name='CircleCI' -c user.email='circleci' commit -m 'Commit to checkout'
+
             git checkout gh-pages
             cp -rf /opt/gh-pages/* ./
             git add .
